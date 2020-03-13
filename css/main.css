@@ -228,6 +228,7 @@ left: 5%;
 	margin-bottom: 15%;
 }
 
+
 .collabCon
 {
 	display: flex;
@@ -238,6 +239,8 @@ left: 5%;
 
 .person img{
 	width: 90%;
+	display: flex;
+	margin: 10% auto;
 }
 
 .person{
@@ -259,5 +262,158 @@ left: 5%;
 	font-weight: 300;
 	font-style: italic;
 	font-size: 3.5vw;
+
+}
+
+@media screen and (min-width: 730px) {
+	#logoCon
+	{
+		width: 12%
+	}
+
+	#button{
+		width: 7%;
+		margin-top: 4%;
+	}
+
+	.intro img{
+		width: 80%;
+		margin: 6% auto;
+	}
+
+	.intro h2{
+		margin: 1% 0 1% 10%;
+
+	}
+
+	.intro p, .steps p {
+		font-size: 3vw;
+		line-height: 4.5vw;
+		width: 65%;
+	}
+
+	.downloadBtn
+	{
+		width: 20%;
+		
+	}
+
+	.downloadBtn a {
+		font-size: 2.6vw;
+	}
+	#burgerMenu ul li a{
+		font-size: 7vw;
+	}
+
+	.closeBtn{
+		top: 5%;
+	}
+
+	.lawson img
+	{
+		width: 100%;
+		margin-top: -9%;
+		
+	}
+
+	.lawson p {
+		margin-top: 5%;
+
+	}
+
+	.person
+	{
+		width: 26%;
+	}
+
+	.person img{
+		width: 65%;
+	}
+@media screen and (min-width: 1020px)
+{
+	#mainHeader
+	{
+		padding: 2%;
+	}
+
+	.intro
+	{
+		margin-top: 20%;
+	}
+
+	.intro h2, .steps h2{
+		font-size: 5vW;
+		line-height: 6vw;
+		
+	}
+
+	.intro h2 {
+		width: 35%;
+	}
+
+	.intro img{
+		width: 65%;
+		margin: 3% auto;
+	}
+
+	.intro p, .steps p{
+		font-size: 2.5vw;
+		line-height: 3.6vw;
+	}
+
+	.downloadBtn{
+		margin-top: 6%;
+	}
+
+	.steps{
+		margin-top: 15%;
+	}
+
+	.steps img{
+		width: 65%;
+		margin-top: 9%;
+	}
+
+	.icon img{
+		width: 50%;
+	}
+
+	.icon1 img{
+		width: 30%;
+	}
+
+	.icon
+	{
+		padding: 4%;
+		border-bottom-width: 1.5vw;
+	}
+
+	#burgerMenu ul li a
+	{
+		font-size: 6vw;
+	}
+
+	.closeBtn{
+		right: 6%;
+	}
+
+	.collabCon{
+		width: 84%;
+		margin: 0 auto;
+	}
+
+	.person h3{
+		font-size: 2.5vw;
+	}
+
+	.person h4{
+		font-size: 2vw;
+	}
+
+	.lawson img{
+		width: 100%;
+		margin-top: -7%;
+	}
+}
 
 }
