@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/*CSS Doc*/
+
+.hidden
+{
+	display: none;
+}
+
+body{
+	font-family: 'Helvetica Neue', Helvetica, Arial;
+	background-color: #EAEEF1;
+}
+#mainHeader
+{
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	width: 100%;
+	top: 0;
+	background-color: #EAEEF1;
+	padding: 4% 0;
+	box-shadow: 0 4px 12px -6px #22222269;
+	z-index: 9999;
+}
+
+
+#logoCon
+{
+	width: 20%;
+	margin-right: 5% ;
+	
+}
+
+#button
+{
+cursor: pointer;
+margin-top: 6%;
+width: 12%;
+margin-left: 5%;
+}
+
+#button img {
+	width: 100%;
+}
+
+.closeBtn
+{
+	position: absolute;
+	right: 10%;
+	top: 3%;
+
+}
+
+.active
+{
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+#mainNav
+{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.88);
+	font-weight: bold;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out ;
+	
+}
+
+#burgerCon {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.closeBtn{
+	font-size: 7vw;
+	color: #C2181E;
+	cursor: pointer;
+}
+
+#burgerMenu ul li {
+	padding: 1rem 1rem;
+}
+
+#burgerMenu ul li a{
+	font-size: 10vw;
+	text-decoration: none;
+	color: rgb(112, 112, 112);
+
+}
+
+#burgerMenu ul li a:hover{
+	color: #F8840D;
+	transition: color 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	
+}
+
+.intro img
+{
+	width: 100%;
+	margin: 7% 0;
+}
+ 
+.intro{
+	margin-top: 30%;
+
+}
+
+.intro, .steps {
+	display: flex;
+	flex-direction: column;
+}
+
+.intro h2, .steps h2 {
+	font-size: 6vw;
+	font-weight: bold;
+	color: rgb(112, 112, 112);
+	line-height: 7.5vw;
+	margin-left: 10%;
+
+}
+.intro h2{
+	width: 45%;
+	margin-top: 5%;
+}
+
+.intro p, .steps p{
+	width: 70%;
+	margin: 0 auto;
+	font-size: 4.5vw;
+	line-height: 6vw;
+	font-weight: 300;
+
+}
+
+.downloadBtn{
+	text-align: center;
+	border-radius: 7vw;
+	width: 40%;
+	margin: 10% auto;
+	background-color: #C2181E;
+	padding: 3% 6%;
+}
+
+.downloadBtn a
+{
+	
+	text-decoration: none;
+	color: white;
+	font-size: 4vw;
+	font-weight: bold;
+	
+}
+
+
+.steps{
+	margin-top: 25%;
+}
+.steps img{
+	width: 75%;
+	margin: 5% auto;
+	display: flex;
+
+}
+
+.steps h2{
+	width: 70%;
+}
+
+.icon
+{
+	display: flex;
+	width: 40%;
+	flex-wrap: wrap;
+	padding: 10%;
+	margin: 5% auto;
+	border-bottom: 2vw solid #E4E4E4;
+}
+
+.icon h4 {
+margin: 3% auto 20%;
+font-size: 3.3vw;
+font-weight: bold;
+}
+
+
+.icon h3 {
+font-size: 8vw;
+font-weight: bolder;
+color: #C2181E;
+position: relative;
+margin-top: 30%;
+left: 5%;
+}
+
+
+.icon img{
+	width: 50%;
+	margin-left: 15%;
+}
+
+.icon1 img
+{
+	margin-left: 22%;
+	width: 30%;
+}
+
+.iconCon
+{
+	margin-bottom: 10%;
+}
+
+
+.lawson img
+{
+  width: 100%;
+  margin-bottom: 15%;
+}
+
+.lawson{
+	margin-bottom: 15%;
+}
+
+.collabCon
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 15%;
+}
+
+.person img{
+	width: 90%;
+}
+
+.person{
+	width: 40%;
+	margin-top: 10%;
+}
+
+.person h3, .person h4{
+	text-align: center;
+	margin-top: 5%;
+}
+
+.person h3 {
+	font-weight: bold;
+	font-size: 4vw;
+}
+
+.person h4 {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 3.5vw;
+
+}
