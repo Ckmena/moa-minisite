@@ -1,0 +1,589 @@
+@charset "UTF-8";
+/*CSS Doc*/
+
+.hidden
+{
+	display: none;
+}
+
+body{
+	font-family: 'Helvetica Neue', Helvetica, Arial;
+	background-color: #EAEEF1;
+}
+#mainHeader
+{
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	width: 100%;
+	top: 0;
+	background-color: #EAEEF1;
+	padding: 4% 0;
+	box-shadow: 0 4px 12px -6px #22222269;
+	z-index: 9999;
+}
+
+
+#logoCon
+{
+	width: 20%;
+	margin-right: 5% ;
+	
+}
+
+#logoCon::before {
+	content: url('../images/MOA_logo_hand.svg');
+}
+
+#button
+{
+cursor: pointer;
+margin-top: 6%;
+width: 12%;
+margin-left: 5%;
+}
+
+#button img {
+	width: 100%;
+}
+
+.closeBtn
+{
+	position: absolute;
+	right: 10%;
+	top: 3%;
+
+}
+
+.active
+{
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+#mainNav
+{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.88);
+	font-weight: bold;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out ;
+	
+}
+
+#burgerCon {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.closeBtn{
+	font-size: 7vw;
+	color: #C2181E;
+	cursor: pointer;
+}
+
+#burgerMenu ul li {
+	padding: 1rem 1rem;
+}
+
+#burgerMenu ul li a{
+	font-size: 10vw;
+	text-decoration: none;
+	color: rgb(112, 112, 112);
+
+}
+
+#burgerMenu ul li a:hover{
+	color: #F8840D;
+	transition: color 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	
+}
+
+.intro img
+{
+	width: 100%;
+	margin: 7% 0;
+}
+ 
+.intro{
+	margin-top: 30%;
+
+}
+
+.intro, .steps {
+	display: flex;
+	flex-direction: column;
+}
+
+.intro h2, .steps h2 {
+	font-size: 6vw;
+	font-weight: bold;
+	color: rgb(112, 112, 112);
+	line-height: 7.5vw;
+	margin-left: 10%;
+
+}
+.intro h2{
+	width: 45%;
+	margin-top: 5%;
+}
+
+.intro p, .steps p{
+	width: 70%;
+	margin: 0 auto;
+	font-size: 4.5vw;
+	line-height: 6vw;
+	font-weight: 300;
+
+}
+
+.downloadBtn{
+	text-align: center;
+	border-radius: 7vw;
+	width: 40%;
+	margin: 10% auto;
+	background-color: #C2181E;
+	padding: 3% 6%;
+}
+
+.downloadBtn a
+{
+	
+	text-decoration: none;
+	color: white;
+	font-size: 4vw;
+	font-weight: bold;
+	
+}
+
+
+.steps{
+	margin-top: 25%;
+}
+.steps img{
+	width: 75%;
+	margin: 5% auto;
+	display: flex;
+
+}
+
+.steps h2{
+	width: 70%;
+}
+
+.icon
+{
+	display: flex;
+	width: 40%;
+	flex-wrap: wrap;
+	padding: 10%;
+	margin: 5% auto;
+	border-bottom: 2vw solid #E4E4E4;
+}
+
+.icon h4 {
+margin: 3% auto 20%;
+font-size: 3.3vw;
+font-weight: bold;
+}
+
+
+.icon h3 {
+font-size: 8vw;
+font-weight: bolder;
+color: #C2181E;
+position: relative;
+margin-top: 30%;
+left: 5%;
+}
+
+
+.icon img{
+	width: 50%;
+	margin-left: 15%;
+}
+
+.icon1 img
+{
+	margin-left: 22%;
+	width: 30%;
+}
+
+.iconCon
+{
+	margin-bottom: 10%;
+}
+
+
+.lawson img
+{
+  width: 100%;
+  margin-bottom: 15%;
+}
+
+.lawson{
+	margin-bottom: 15%;
+}
+
+
+.collabCon
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 15%;
+}
+
+.person img{
+	width: 90%;
+	display: flex;
+	margin: 10% auto;
+}
+
+.person{
+	width: 40%;
+	margin-top: 10%;
+}
+
+.person h3, .person h4{
+	text-align: center;
+	margin-top: 5%;
+}
+
+.person h3 {
+	font-weight: bold;
+	font-size: 4vw;
+}
+
+.person h4 {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 3.5vw;
+
+}
+
+@media screen and (min-width: 730px) {
+	#logoCon
+	{
+		width: 12%
+	}
+
+	#button{
+		width: 7%;
+		margin-top: 4%;
+	}
+
+	.intro img{
+		width: 80%;
+		margin: 6% auto;
+	}
+
+	.intro h2{
+		margin: 1% 0 1% 10%;
+
+	}
+
+	.intro p, .steps p {
+		font-size: 3vw;
+		line-height: 4.5vw;
+		width: 65%;
+	}
+
+	.downloadBtn
+	{
+		width: 20%;
+		
+	}
+
+	.downloadBtn a {
+		font-size: 2.6vw;
+	}
+	#burgerMenu ul li a{
+		font-size: 7vw;
+	}
+
+	.closeBtn{
+		top: 5%;
+	}
+
+	.lawson img
+	{
+		width: 100%;
+		margin-top: -9%;
+		
+	}
+
+	.lawson p {
+		margin-top: 5%;
+
+	}
+
+	.person
+	{
+		width: 26%;
+	}
+
+	.person img{
+		width: 65%;
+	}
+}
+@media screen and (min-width: 1020px)
+{
+	#mainHeader
+	{
+		padding: 2%;
+	}
+
+	.intro
+	{
+		margin-top: 20%;
+	}
+
+	.intro h2, .steps h2{
+		font-size: 5vW;
+		line-height: 6vw;
+		
+	}
+
+	.intro h2 {
+		width: 35%;
+	}
+
+	.intro img{
+		width: 65%;
+		margin: 3% auto;
+	}
+
+	.intro p, .steps p{
+		font-size: 2.5vw;
+		line-height: 3.6vw;
+	}
+
+	.downloadBtn{
+		margin-top: 6%;
+	}
+
+	.steps{
+		margin-top: 15%;
+	}
+
+	.steps img{
+		width: 65%;
+		margin-top: 9%;
+	}
+
+	.icon img{
+		width: 50%;
+	}
+
+	.icon1 img{
+		width: 30%;
+	}
+
+	.icon
+	{
+		padding: 4%;
+		border-bottom-width: 1.5vw;
+	}
+
+	#burgerMenu ul li a
+	{
+		font-size: 6vw;
+	}
+
+	.closeBtn{
+		right: 6%;
+	}
+
+	.collabCon{
+		width: 84%;
+		margin: 0 auto;
+	}
+
+	.person h3{
+		font-size: 2.5vw;
+	}
+
+	.person h4{
+		font-size: 2vw;
+	}
+
+	.lawson img{
+		width: 100%;
+		margin-top: -7%;
+	}
+}
+
+	@media screen and (min-width: 1360px)
+	{
+		#mainHeader
+		{
+			padding: 0 2% 1%;
+		}
+
+		#logoCon{
+			width: 6%;
+			margin-top: 1.5%;
+			margin-right: 8%;
+		}
+
+		#button
+		{
+			width: 3%;
+			margin-top: 3%;
+		}
+
+		.closeBtn{
+			font-size: 3vw;
+			top: 5%;
+			right: 7.5%;
+		}
+
+		#burgerMenu ul li a{
+			font-size: 4vw;
+		}
+
+		.intro{
+			margin-top: 12%;
+		}
+		.intro h2, .steps h2 {
+			font-size: 4vw;
+			line-height: 4.5vw;
+		}
+
+		.intro h2{
+			width: 25%;
+		}
+
+		.intro img{
+			order: -1;
+			width: 55%;
+			margin: 3% 0 0 6%;
+		}
+
+		.intro p, .steps p{
+			font-size: 1.5vw;
+			line-height: 2vw;
+			width: 31%;
+		}
+
+		.intro p {
+			margin: -39% 7% 0 auto;
+		}
+
+		.downloadBtn{
+			width: 12%;
+			margin: 6% 15% 0 auto;
+			padding: 1.5% 3%;
+
+		}
+
+		.downloadBtn a{
+			font-size: 1.5vw;
+		}
+
+		.steps
+		{
+			margin-top: 25%;
+			display: flex;
+			flex-direction: row;
+
+		}
+		.stepsTop {
+			width: 55%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.iconCon {
+			width: 40%;
+			box-shadow: 0 14px 25px -15px rgba(93, 97, 104, 0.39);		
+		}
+
+		.steps p {
+			order: -1;
+			width: 60%;
+			margin-top: 15%;
+		}
+
+		.stepsTop h2{
+			order: 1;
+		}
+
+		.icon h4{
+			font-size: 1.3vw;
+		}
+
+		.icon h3{
+ 			font-size: 4vw;
+		}
+
+		.icon
+		{
+			border-bottom-width: 1vw;
+		}
+
+		.lawson {
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin-top: 15%;
+			margin-bottom: -15%;
+		}
+		.lawson h2 {
+			order: 2;
+			margin-top: -17%;
+		}
+
+		.lawImg {
+			margin-top: -29%;
+			width: 66%;
+			overflow-x: hidden;
+			margin-left: auto;
+		}
+
+		.lawson img {
+			width: 115%;
+			margin-left: 7%;		}
+
+		.lawson p {
+			margin: 0 0 0 15%;
+			order: -1;
+		}
+
+		#logoCon {
+			width: 20%;
+		}
+
+		#logoCon::before {
+			content: url("../images/logo2-full.svg");
+		}
+
+		.person{
+			width: 20%;
+			margin-top: 6%;
+			
+		}
+
+		.person img{
+			margin: 3% auto;
+		}
+
+		.collab h2{
+			margin-top: -12%;
+			order: 1;
+			font-size: 3.5vw;
+			margin-left: 7%;
+		}
+		.person:nth-child(5){
+			margin-left: 25%;
+		}
+
+	}
+	
